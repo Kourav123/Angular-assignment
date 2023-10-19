@@ -1,0 +1,23 @@
+<p>client-management works!</p>
+<section id="client-form">
+    <h1>Create a Client</h1>
+    <h6>Please fill in this form to create a client</h6>
+
+    <form (submit)="registerClient()">
+        <div class="form-group">
+            <label for="client-name">Name:</label><br>
+            <input type="text" id="client-name" [(ngModel)]="clientName" name="clientName" required placeholder="Enter Name"><br>
+        </div><br>
+        <div class="form-group">
+            <label for="client-email">Email:</label><br>
+            <input type="email" id="client-email" [(ngModel)]="clientEmail" name="clientEmail" placeholder="Enter Email"/>
+        </div><br>
+        <!-- Add the rest of your form fields similarly -->
+        <div class="form-group">
+            <input type="submit" value="Register" class="custom-button">
+            <input type="button" (click)="cancelRegistration()" value="Cancel" class="custom-button1">
+        </div>
+    </form>
+</section>
+
+

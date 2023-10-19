@@ -1,0 +1,29 @@
+<header>
+    <h1>Create a Meeting Schedule</h1>
+  </header>
+  <main>
+    <form (submit)="registerMeeting()">
+      <div class="form-group">
+        <label for="meeting-topic">Meeting Topic:</label><br>
+        <input type="text" id="meeting-topic" [(ngModel)]="meetingTopic" name="meetingTopic" required
+               placeholder="Enter Meeting Topic"><br>
+      </div><br>
+      <div class="form-group">
+        <label for="number-of-people">Number of People:</label><br>
+        <input type="text" id="number-of-people" [(ngModel)]="numberOfPeople" name="numberOfPeople" required
+               placeholder="Enter the Number of People"><br>
+      </div><br>
+      <div class="form-group">
+        <h2>Start Timing</h2>
+        <label for="meeting-datetime">:</label><br>
+        <input type="datetime-local" id="meeting-datetime" [(ngModel)]="meetingDatetime" name="meetingDatetime" required>
+      </div>
+      <div class="form-group"><br>
+        <button type="submit" class="custom-button">Register</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; Simpli Learn Private Limited 2023.</p>
+  </footer>
+  
