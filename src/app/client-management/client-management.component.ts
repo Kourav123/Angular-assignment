@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
 export class ClientManagementComponent {
   clientName: string = '';
   clientEmail: string = '';
-
+  clientAddress:string='';
+  clientPassword: string='';
+  clientRepeatPassword:string='';
   registerClient() {
     // Here, you can implement the logic to send the client data to the server using Angular HttpClient.
     // You can access the values like this.clientName and this.clientEmail.

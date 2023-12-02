@@ -2,7 +2,6 @@
 <section id="client-form">
     <h1>Create a Client</h1>
     <h6>Please fill in this form to create a client</h6>
-
     <form (submit)="registerClient()">
         <div class="form-group">
             <label for="client-name">Name:</label><br>
@@ -12,7 +11,19 @@
             <label for="client-email">Email:</label><br>
             <input type="email" id="client-email" [(ngModel)]="clientEmail" name="clientEmail" placeholder="Enter Email"/>
         </div><br>
-        <!-- Add the rest of your form fields similarly -->
+         <div class="form-group">
+            <label for="client-Address">Address:</label><br>
+            <input type="Address" id="client-Address" [(ngModel)]="clientAddress" name="clientAddress" placeholder="Enter Address"/>
+        </div><br>
+        <div class="form-group">
+            <label for="client-passwaod">Password:</label><br>
+            <input type="Password" id="client-passwaod" [(ngModel)]="clientPassword" name="clientPassword" placeholder="Enter Password"/>
+        </div><br>
+        <div class="form-group">
+            <label for="client-Repeat-Password">Repeat Password:</label><br>
+           <input type="password" id="client-repeat-password" [(ngModel)]="clientRepeatPassword" name="clientRepratPassword" placeholder="Enter Repeat-Password"/>
+        </div><br>
+           <!-- Add the rest of your form fields similarly -->
         <div class="form-group">
             <input type="submit" value="Register" class="custom-button">
             <input type="button" (click)="cancelRegistration()" value="Cancel" class="custom-button1">
