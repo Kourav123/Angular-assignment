@@ -1,0 +1,12 @@
+{
+    "clients": [
+      { "id": 1, "name": "Client 1", "email": "client1@gmail.com" },
+      { "id": 2, "name": "Client 2", "email": "client2@gmail.com" }
+    ],
+
+    "meetings": []
+  }
+
+  
+
+  

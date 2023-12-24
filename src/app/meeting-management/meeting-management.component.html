@@ -18,8 +18,10 @@
         <label for="meeting-datetime">:</label><br>
         <input type="datetime-local" id="meeting-datetime" [(ngModel)]="meetingDatetime" name="meetingDatetime" required>
       </div>
-      <div class="form-group"><br>
+        <div class="form-group"><br>
         <button type="submit" class="custom-button">Register</button>
+       <input type="button" (click)="cancelRegistration()" value="Cancel" class="custom-button1">
+ 
       </div>
     </form>
   </main>
